@@ -66,7 +66,7 @@ a#teledyski {
     color: azure;
     text-decoration: none;
     font-size: 140%;
-    margin-right: 1000px;
+    margin-right: 1080px;
 }
 div#content {
     margin-top: 40px;
@@ -486,7 +486,7 @@ html {
 #pixadc {
   height: 120px;
   padding-bottom: 30px;
-  margin-left: 90px;
+  margin-left: 50px;
 }
 
 #discord {
@@ -508,6 +508,21 @@ html {
 img#preview2:hover {
   height: 240px;
 }
+
+#preview7 {
+  height: 220px;
+  margin-left: 40px;
+  box-shadow: 0px 0px 30px black;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+img#preview7:hover {
+  height: 240px;
+}
+
 
 #preview3 {
   height: 220px;
@@ -2102,6 +2117,315 @@ img#preview6:hover {
   }
 
   .modal6 .modal-body .modal-content-second {
+    grid-row: 2;
+  }
+}
+
+@media screen and (max-width: 375px) {
+}
+
+
+#wrapper7 {
+  display: none;
+  justify-content: center;  
+  align-items: center;
+  z-index: 1;
+  overflow: auto;
+}
+
+.modal7 {
+  display: flex;
+  flex-direction: column;
+  width: 870px;
+  margin: 20px 20px;
+  border-radius: 6px;
+  z-index: 2;
+  background-color: var(--modal);
+  box-shadow: rgb(0 0 0 / 75%) 0px 3px 10px;
+  transition: opacity 0.2s linear;
+  overflow: auto;
+  cursor: pointer;
+}
+
+.modal7 .modal-header {
+  position: relative;
+}
+
+.modal7 .modal-header::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: "";
+  background: linear-gradient(0deg, var(--modal), transparent 50%);
+}
+
+.modal7 .modal-header video {
+  border-radius: 6px 6px 0 0;
+  display: block;
+  width: 100%;
+  opacity: 1;
+}
+
+.modal7 .modal-header .close7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1em;
+  z-index: 2;
+  cursor: pointer;
+  background-color: var(--modal);
+  color: var(--white);
+  border-radius: 50%;
+  height: 36px;
+  padding: 8px;
+  width: 36px;
+  border: 0;
+}
+
+.modal7 .modal-header .close7 svg {
+  outline: none;
+}
+
+.modal7 .modal-header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 0 52px;
+  margin-bottom: 70px;
+  z-index: 2;
+}
+
+.modal7 .modal-header .header-content .header-title {
+  width: 100%;
+}
+
+.modal7 .modal-header .header-content .header-title > img {
+  width: 40%;
+  margin-bottom: 1.5em;
+}
+
+.modal7 .modal-header .header-content .header-title .header-buttons {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.modal7 .modal-header .header-content .header-title .header-buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  cursor: pointer;
+  max-height: 42px;
+  min-height: 32px;
+  font-size: 1.6rem;
+}
+
+.modal7 .modal-header .header-content .header-title .header-buttons .play7,
+.modal7 .modal-header .header-content .header-title .header-buttons .add7 {
+  margin-right: 10px;
+}
+
+.modal7 .modal-header .header-content .header-title .header-buttons .play7 {
+  appearance: none;
+  border: 0;
+  border-radius: 4px;
+  padding-left: 2rem;
+  padding-right: 2.4rem;
+  background-color: var(--white);
+  color: var(--background);
+  font-weight: 700;
+  line-height: 2.4rem;
+}
+
+.modal7 .modal-header .header-content .header-title .header-buttons .play7 svg {
+  height: 100%;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.modal7 .modal-header .header-content .header-title .header-buttons .volume7,
+.modal7 .modal-header .header-content .header-title .header-buttons .add7,
+.modal7 .modal-header .header-content .header-title .header-buttons .rate7 {
+  max-width: 42px;
+  min-width: 32px;
+  background-color: rgba(42, 42, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-width: 2px;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  color: var(--white);
+  border-radius: 50%;
+}
+
+.modal7
+  .modal-header
+  .header-content
+  .header-title
+  .header-buttons
+  .volume7:hover,
+.modal7 .modal-header .header-content .header-title .header-buttons .add7:hover,
+.modal7 .modal-header .header-content .header-title .header-buttons .rate7:hover {
+  border-color: var(--white);
+  background-color: rgba(42, 42, 42, 1);
+}
+
+.modal7 .modal-header .header-content .header-title .header-buttons .volume7 {
+  position: absolute;
+  right: 0;
+  opacity: 0.4;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.modal7
+  .modal-header
+  .header-content
+  .header-title
+  .header-buttons
+  .volume7:hover {
+  opacity: 1;
+}
+
+.modal7 .modal-body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 10px;
+  padding: 15px 48px;
+}
+
+.modal7 .modal-body .modal-content-first {
+  padding-right: 40px;
+  line-height: 25px;
+}
+
+.modal7 .modal-body .modal-content-first .modal-description {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.modal7 .modal-body .modal-content-first .modal-description span,
+.modal7 .modal-body .modal-content-first .modal-description svg {
+  margin-right: 10px;
+}
+
+.modal7 .modal-body .modal-content-first .modal-description span:first-child {
+  color: #46d369;
+}
+
+#ziel {
+  color: #46d369;
+}
+
+.modal7 .modal-body .modal-content-first .modal-description span {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.modal7 .modal-body .modal-content-first .modal-description svg {
+  width: 30px;
+}
+
+.modal7 .modal-body .modal-content-first .modal-description .description-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15px;
+  border: 1px solid hsla(0, 0%, 100%, 0.4);
+  border-radius: 3px;
+  color: hsla(0, 0%, 100%, 0.9);
+  font-size: 1.2rem;
+  padding: 0 0.5em;
+  white-space: nowrap;
+}
+
+.modal7 .modal-body .modal-content-first p {
+  font-size: 1.4rem;
+  line-height: 24px;
+  word-break: break-word;
+}
+
+.modal7 .modal-body .modal-content-second {
+  word-break: break-word;
+}
+
+.modal7 .modal-body .modal-content-second span {
+  line-height: 20px;
+}
+
+.modal7 .modal-body .modal-content-second .title {
+  color: #777;
+}
+
+.modal7 .modal-body .modal-content-second .cast,
+.modal7 .modal-body .modal-content-second .genres,
+.modal7 .modal-body .modal-content-second .show {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.modal7 .modal-body .modal-content-second .cast span:hover,
+.modal7 .modal-body .modal-content-second .genres span:hover,
+.modal7 .modal-body .modal-content-second .show span:hover {
+  text-decoration: underline;
+}
+
+.modal7 .modal-body .modal-content-first,
+.modal7 .modal-body .modal-content-second {
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.visuallyhidden {
+  opacity: 0;
+}
+
+@media screen and (min-width: 1080px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 768px) {
+  .modal7 .modal-header .header-content .header-title .header-buttons .add7,
+  .modal7 .modal-header .header-content .header-title .header-buttons .rate7,
+  .modal7 .modal-header .header-content .header-title .header-buttons .volume7 {
+    width: 32px;
+    height: 32px;
+  }
+
+  .modal7 .modal-header .header-content {
+    margin-bottom: 40px;
+  }
+
+  .modal7 .modal-header .header-content .header-title .header-buttons .play7 {
+    height: 32px;
+    font-size: 1.2rem;
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 688px) {
+  .modal7 .modal-body {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .modal7 .modal-body .modal-content-second {
     grid-row: 2;
   }
 }
