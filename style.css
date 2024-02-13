@@ -71,6 +71,7 @@ a#teledyski {
 div#content {
     margin-top: 40px;
     width: 100%;
+    height: auto;
     position: relative;
     text-align: center;
     color: azure;
@@ -103,9 +104,6 @@ h2#budowa {
     width: 100%;
     bottom: 0;
     left: 0;
-}
-#content-wrap {
-  flex: 1;
 }
 
 #stopa {
@@ -2431,4 +2429,25 @@ img#preview6:hover {
 }
 
 @media screen and (max-width: 375px) {
+}
+
+
+
+
+
+#previewAD {
+  height: auto;
+  max-height: 220px;
+  width: auto;
+  max-width: 150px;
+  margin-left: 40px;
+  box-shadow: 0px 0px 30px black;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+img#previewAD:hover {
+  height: 240px;
 }
